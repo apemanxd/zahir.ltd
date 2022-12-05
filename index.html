@@ -57,15 +57,18 @@
             <div class="align-items-center justify-content-between">
                 <h1>Zahir's <a id="vouch">Vouches</a></h1>
             </div>
-            <a href="/currencies"><p><i class="fa-solid fa-dollar-sign"></i> Currencies</p></a>
+            <a href="/currencies">
+                <p><i class="fa-solid fa-dollar-sign"></i> Currencies</p>
+            </a>
             <p>All vouches from my Discord server are automatically transferred into this page.</p>
             <!--<p id="count">Total vouches: <span id="counterSpan"></span></p>-->
             <div id="social-icon-div" class="">
                 <a href="https://ogu.gg/Zahir" target="_blank"><img class="social" src="images/ogu.svg"></img></a>
                 <a href="https://t.me/MoneroMonkey" target="_blank"> <img class="social"
                         src="images/telegram.svg"></img></a>
-                <a href="https://zahir.ltd/discord" target="_blank"><img class="social" src="images/discord.svg"></img></a>
-                
+                <a href="https://zahir.ltd/discord" target="_blank"><img class="social"
+                        src="images/discord.svg"></img></a>
+
             </div>
 
             <p></p>
@@ -77,8 +80,8 @@
                         <table>
                             <thead>
                                 <tr class="table100-head">
-                                    <th class="column1">ID <i id="sort" class="fa-solid fa-sort" style="cursor: pointer" onclick="reverseTable()"
-										aria-hidden="true"></i></th>
+                                    <th class="column1">ID <i id="sort" class="fa-solid fa-sort" style="cursor: pointer"
+                                            onclick="reverseTable()" aria-hidden="true"></i></th>
                                     <th class="column2">Discord Tag</th>
                                     <th class="column3">Discord ID</th>
                                     <th class="column4">Comment</th>
@@ -100,7 +103,8 @@
                     <a href="https://ogu.gg/Zahir" target="_blank"><img class="social" src="images/ogu.svg"></img></a>
                     <a href="https://t.me/MoneroMonkey" target="_blank"> <img class="social"
                             src="images/telegram.svg"></img></a>
-                    <a href="https://zahir.ltd/discord" target="_blank"><img class="social" src="images/discord.svg"></img></a>
+                    <a href="https://zahir.ltd/discord" target="_blank"><img class="social"
+                            src="images/discord.svg"></img></a>
 
                 </div>
 
@@ -115,7 +119,7 @@
 <script src="js/apeman.js" type="9917f83a9486abcf6d2c9532-text/javascript"></script>
 <script>
     let count, vouches = [];
-    fetch("vouches.json")
+    fetch("http://157.90.74.87:5500/vouches")
         .then(function (resp) {
             return resp.json();
         })
@@ -147,6 +151,8 @@
             var table_body_element = document.getElementById('tbodyFinal');
             table_body_element.innerHTML = row_data;
             document.getElementById('my_table').appendChild(table_body_element);
+
+            
         });
 
     function reverseTable() {
@@ -156,6 +162,8 @@
             $(this).append(arr);
         });
     };
+
+
 </script>
 
 </html>
