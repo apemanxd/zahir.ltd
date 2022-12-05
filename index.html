@@ -19,8 +19,8 @@
 
     <meta content="#7b88db" name="theme-color">
 
-    <meta property="og:image" content="https://i.imgur.com/i4dgjiv.png" />
-    <link rel="icon" type="image/x-icon" href="images/fav.ico" />
+    <meta property="og:image" content="images/Favicon/Purple/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="index.html" />
 
@@ -56,10 +56,13 @@
         <div class="my-5">
             <div class="align-items-center justify-content-between">
                 <h1>Zahir's <a id="vouch">Vouches</a></h1>
+                <a href="/currencies">
+                    <i class="fa-solid fa-dollar-sign"></i> Currencies
+                </a> | <a href="/tos">
+                    <i class="fa-solid fa-scroll"></i> TOS
+                </a>
             </div>
-            <a href="/currencies">
-                <p><i class="fa-solid fa-dollar-sign"></i> Currencies</p>
-            </a>
+
             <p>All vouches from my Discord server are automatically transferred into this page.</p>
             <!--<p id="count">Total vouches: <span id="counterSpan"></span></p>-->
             <div id="social-icon-div" class="">
@@ -152,7 +155,7 @@
             table_body_element.innerHTML = row_data;
             document.getElementById('my_table').appendChild(table_body_element);
 
-            
+
         });
 
     function reverseTable() {
@@ -162,8 +165,6 @@
             $(this).append(arr);
         });
     };
-
-
 </script>
 
 </html>
