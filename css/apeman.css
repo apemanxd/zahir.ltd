@@ -4,7 +4,7 @@
 
 :root {
     --main: #7b88db;
-    --secondary: #4354c0;
+    --secondary: #5c69c0;
     --bodyC: #fff;
     --bg:#2e2e2e; /*#0d0d0d*/
     --bgFooter: #292929;
@@ -371,7 +371,7 @@ a {
 
 a:hover {
     transition: .4s;
-    color: rgb(202, 30, 131);
+    color: var(--secondary);
     text-shadow: 0 0 1px var(--main);
     text-decoration: underline
 }
