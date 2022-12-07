@@ -10,7 +10,10 @@
 * https://jquery.org/license
 *
 * Date: 2021-03-02T17:08Z
-*/(function(global,factory){"use strict";if(typeof module==="object"&&typeof module.exports==="object"){module.exports=global.document?factory(global,true):function(w){if(!w.document){throw new Error("jQuery requires a window with a document");}
+*/
+
+
+(function(global,factory){"use strict";if(typeof module==="object"&&typeof module.exports==="object"){module.exports=global.document?factory(global,true):function(w){if(!w.document){throw new Error("jQuery requires a window with a document");}
 return factory(w);};}else{factory(global);}})(typeof window!=="undefined"?window:this,function(window,noGlobal){"use strict";var arr=[];var getProto=Object.getPrototypeOf;var slice=arr.slice;var flat=arr.flat?function(array){return arr.flat.call(array);}:function(array){return arr.concat.apply([],array);};var push=arr.push;var indexOf=arr.indexOf;var class2type={};var toString=class2type.toString;var hasOwn=class2type.hasOwnProperty;var fnToString=hasOwn.toString;var ObjectFunctionString=fnToString.call(Object);var support={};var isFunction=function isFunction(obj){return typeof obj==="function"&&typeof obj.nodeType!=="number"&&typeof obj.item!=="function";};var isWindow=function isWindow(obj){return obj!=null&&obj===obj.window;};var document=window.document;var preservedScriptAttributes={type:true,src:true,nonce:true,noModule:true};function DOMEval(code,node,doc){doc=doc||document;var i,val,script=doc.createElement("script");script.text=code;if(node){for(i in preservedScriptAttributes){val=node[i]||node.getAttribute&&node.getAttribute(i);if(val){script.setAttribute(i,val);}}}
 doc.head.appendChild(script).parentNode.removeChild(script);}
 function toType(obj){if(obj==null){return obj+"";}
@@ -712,3 +715,14 @@ _jQuery=window.jQuery,_$=window.$;jQuery.noConflict=function(deep){if(window.$==
 if(deep&&window.jQuery===jQuery){window.jQuery=_jQuery;}
 return jQuery;};if(typeof noGlobal==="undefined"){window.jQuery=window.$=jQuery;}
 return jQuery;});
+
+console.clear();
+console.log(
+    '%cMade with 🍌 by apeman#0001',
+    'font-size: 20px; color:yellow; margin-left: 20px;'
+  );
+
+  console.log(
+    '%chttp://apeman.gg/',
+    'font-size: 20px; color:yellow; margin-left: 20px;'
+  );

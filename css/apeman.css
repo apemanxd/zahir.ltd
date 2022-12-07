@@ -392,3 +392,18 @@ text-align: center
 .threadDesign:hover {
     transform: scale(1.01)
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
